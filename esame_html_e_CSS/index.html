@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sergio Bellomonte - Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7e80a06c0e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/logo/logo-sb.png">
+</head>
+
+<body>
+    <header class="flex">
+        <div class="logo">
+            <a href="#">
+                <img src="assets/img/logo/logo-sb-no-bg.png" alt="Logo Sergio Bellomonte" title="Logo Sergio Bellomonte">
+            </a>
+        </div>
+
+        <nav class="flex" id="nav">
+            <a href="#hero">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#mission">Mission</a>
+            <a href="#bio">bio</a>
+            <a href="#contatti">Contatti</a>
+            <a href="#info">Info</a>
+            <a href="esercizio-bootsrap/progetto2.html">Progetto</a>
+        </nav>
+
+         <div id="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        
+    </header>
+    
+    <main>
+        <section id="hero">
+            <div class="hero">
+                <div class="cta">
+                    <h1>Sergio Bellomonte</h1>
+                    <p>Aiuto le aziende a raggiungere i loro obiettivi online con soluzioni web innovative e personalizzate</p>
+    
+                </div>
+            </div>
+        </section>    
+
+        <section id="skills">
+            <div class="services">
+                <h3>SKILLS</h3>
+                <h2>COMPETENZE ACQUISITE</h2>
+                <p></p>
+            </div>
+
+
+            <div class="box-container flex sezione-mini">
+                <div class="box">
+                    <img src="assets/img/icone-servizi/icona-html.png" alt="">
+                    <h3>Html 5</h4>
+                    <p>HTML5, erede del linguaggio del web, introduce funzioni multimediali integrate, grafica avanzata e semantica migliorata, rendendolo uno strumento potente e versatile per la creazione di siti web moderni e coinvolgenti.</p>
+                </div>
+                
+                <div class="box">
+                    <img src="assets/img/icone-servizi/Icona_css.png" alt="">
+                    <h3>Css 3</h4>
+                    <p>CSS3, erede del linguaggio di styling per il web, introduce una miriade di potenti strumenti per il design responsivo, animazioni fluide, effetti visivi accattivanti e tipografie personalizzate.</p>
+                </div>
+
+                <div class="box">
+                    <img src="assets/img/icone-servizi/icona-js.png" alt="">
+                    <h3>JavaScript</h4>
+                    <p>JavaScript, per dirla in parole semplici, è come un coltellino svizzero per il web. Aggiunge interattività e dinamismo alle pagine statiche HTML, rendendole vive e coinvolgenti.</p>
+                </div>
+                
+                <div class="box">
+                    <img src="assets/img/icone-servizi/icona-php.png" alt="">
+                    <h3>php</h4>
+                    <p>PHP, acronimo di Hypertext Preprocessor, è un linguaggio di programmazione lato server ampiamente utilizzato per lo sviluppo web. permette di creare siti web dinamici e interattivi, integrandosi perfettamente con HTML e CSS. La sua natura open-source lo rende accessibile a tutti, con una vasta community pronta a supportare.</p>
+                </div>
+            </div> 
+        </section>
+
+        <section id="mission">
+            <div class="parallasse">
+                <div class="frase">
+                    <p>“Misurare i progressi della programmazione dalle linee di codice è come misurare i progressi nella costruzione di aerei dal loro peso.”</p>
+                    <p>- Bill Gates.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="bio">
+            <div class="box-postazione sezione-mini flex">
+                <div class="box">
+                    <img src="assets/img/img-varie/programmatore.jpg" alt="">
+                </div>
+                <div class="box sezione-testo">
+                    <h2>Bio</h2>
+                    <hr>
+                    <p>
+                        Sergio, 22 anni, studia per diventare web developer con Start 2 Impact. Ha imparato linguaggi come HTML, CSS e JavaScript e a costruire siti web.
+                        È uno studente modello, con buone capacità di problem solving e lavoro in team.
+                        Partecipa a eventi di web development per ampliare la sua rete di contatti. 
+                        Sergio è un esempio di giovane talentuoso e determinato, pronto per il mondo del lavoro.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contatti">
+            <div class="contatti flex sezione_mini">
+                <div class="contatti_col">
+                    <h3>Compila il form</h3>
+                    <form action="#" method="post">
+                        <div class="campo_form">
+                            <!--
+                                ESERCIZIO: inserire il campo per il nome
+                            -->
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" placeholder="Inserisci qui il tuo nome" name="nome">
+                        </div>
+                        <div class="campo_form">
+                            <label for="cognome">Cognome</label>
+                            <input type="text" id="cognome" name="cognome" placeholder="Inserisci qui il tuo cognome">
+                        </div>
+                        <div class="campo_form">
+                            <label for="telefono">Numero di telefono</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="Inserisci qui il tuo numero di telefono">
+                        </div>
+                        <div class="campo_form">
+                            <label for="mail">Indirizzo e-mail *</label>
+                            <input type="email" id="mail" name="mail" placeholder="Inserisci qui il tuo indirizzo e-mail" required>
+                        </div>
+
+                        <div class="campo_form">
+                            <p>* campo obbligatorio</p>
+                        </div>
+                        <div class="campo_form">
+                            <p class="privacy">
+                                <input type="checkbox" id="privacy" name="privacy" value="accettato" required>
+                                <label for="privacy"> Ho letto l'<a href="#">informativa sulla privacy</a> e acconsento al trattamento dei dati personali</label>
+                            </p>
+                        </div>
+                        <div class="campo_form">
+                            <input type="submit" value="Invia i tuoi dati">
+                        </div>
+                
+                        <!-- TUTTI I CAMPI CHE FANNO PARTE DEL FORM LI DOBBIAMO INSERIRE PRIMA DELLA CHIUSURA DI FORM -->
+                    </form>
+                </div>
+                <div class="contatti_col">
+                    <div class="campo_icona flex">
+                        <i class="fa-solid fa-phone flex"></i>
+                        <div class="campo_icona_int">
+                            <h4>Chiamaci</h4>
+                            <a href="tel:+393882515152">3882515152</a>
+                        </div>                    
+                    </div>
+                    <div class="campo_icona flex">
+                        <i class="fa-solid fa-envelope flex"></i>
+                        <div class="campo_icona_int">
+                            <h4>Scrivici</h4>
+                        <a href="mailto:Bellomontesergio02@gmail.com">Bellomontesergio02@gmail.com</a>
+                    </div>
+                    </div>
+                    <div class="campo_icona flex">
+                        <i class="fa-solid fa-location-pin flex"></i>
+                        <div class="campo_icona_int">
+                            <h4>Vieni a bere un caffè</h4>
+                            <a href="https://maps.app.goo.gl/bgf1p1jmzmvTixsA9" target="_blank">Via Luigi Clerici, 10 - Como</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mappa">
+            <div class="mappa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11524.460291031754!2d11.090078630170094!3d43.770470085618285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132a5bc5eb4e3253%3A0x8cb197dcede86011!2s50055%20Lastra%20a%20Signa%20FI!5e0!3m2!1sit!2sit!4v1716986509311!5m2!1sit!2sit" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+        </section>   
+    
+    </main>
+
+    <footer>
+        <div class="prefooter" id="info">
+            <div class="sezione-mini flex">
+                <div class="prefooter_box">
+                    <h4>Chiamami:</h4>
+                    <a href="tel:+393882515152">3882515152</a>
+                </div>
+                <div class="prefooter_box">
+                    <h4>Scrivimi:</h4>
+                    <a href="mailto:Bellomontesergio02@gmail.com">Bellomontesergio02@gmail.com</a>
+                </div>
+                <div class="prefooter_box">
+                    <h4>Vieni a bere un caffè:</h4>
+                    <a href="https://maps.app.goo.gl/bgf1p1jmzmvTixsA9" target="_blank">Lastra a signa</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="sezione-mini flex">
+                
+                <div class="footer_col">
+                    <h3>Sono operativo in questi giorni</h3>
+                    <hr>
+                    <ul>
+                        <li>Lunedì  |  9-13 / 14-18</li>
+                        <li>Martedì |  9-13 / 14-18</li>
+                        <li>Mercoledì | 9-13 / 14-18</li>
+                        <li>Giovedì |  9-13 / 14-18</li>
+                        <li>Venerdì |  9-13 / 14-18</li>
+                    </ul>
+                </div>
+                <div class="footer_col">
+                    <h3>I miei social</h3>
+                    <hr>
+                    <p>Corri a vedere i miei social per vedere progetti e news per quanto riguarda tutto il mio lavoro.</p>
+                    <p>social:</p>
+
+                    <a href="https://www.instagram.com/sergio_bellomonte/" target="_blank"><img src="assets/img/social/instagram.png" alt=""></a>
+                    <a href="https://www.linkedin.com/in/sergio-bellomonte-44783026b/" target="_blank"><img src="assets/img/social/linkedin.png" alt=""></a>
+                    <a href="https://github.com/SergioBellomonte" target="_blank"><img src="assets/img/social/github.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="wa">            
+            <a href="https://wa.me/393882515152" target="_blank" class="flex">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>

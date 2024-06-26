@@ -1,0 +1,417 @@
+/*Palette colori: https://coolors.co/palette/cf9a09-df4f00-ca1c06-70a4bd-253946-1d1a11*/
+
+.sezione-mini {
+  max-width: 1200px;
+  margin: 60px auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.bottone {
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px 15px;
+  display: inline-block;
+  background-color: #ca1c06;
+  color: white;
+  margin-top: 30px;
+  border: 2px solid #ca1c06;
+}
+
+/*!SEZIONE HEADER*/
+header {
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 9999;
+  padding: 5px 0;
+}
+
+header .logo img {
+  width: 200px;
+}
+
+header nav a {
+  padding: 5px 10px 5px;
+}
+
+header nav a:hover {
+  background-color: #ca1c06;
+  color: white;
+
+  border-radius: 10px;
+}
+
+#hamburger {
+  display: none;
+}
+
+/*SEZIONE MAIN*/
+
+.bottone:hover {
+  color: #ca1c06;
+  background-color: white;
+}
+
+/*!hero*/
+.hero {
+  color: white;
+  background-image: url(../img/img-varie/Sfondo_coding.png);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.hero:before {
+  content: ""; 
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #ffffff08;
+  position: absolute;
+}
+
+.hero a {
+  color: white;
+}
+
+.hero h1,
+p {
+  padding: 10px;
+}
+
+.hero .cta {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero .cta a {
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.265);
+  padding: 10px 15px;
+  display: inline-block;
+}
+
+.hero .cta a:hover {
+  background-color: rgba(255, 255, 255, 0.527);
+  color: black;
+}
+/*!hero*/
+
+/*!Servizi*/
+.services {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.services h3 {
+  font-weight: 800;
+  color: #ca1c06;
+  padding-top: 20px;
+}
+
+.services h2 {
+  font-weight: 800;
+  color: #253946;
+  padding-bottom: 0px;
+}
+
+.box-container .box img {
+  width: 100px;
+}
+
+.box-container h3 {
+  color: #df4f00;
+}
+
+.box-container .box {
+  border-right: 1px dotted #48484844;
+  flex: 1; 
+  padding-top: 30px;
+  text-align: center;
+}
+
+.box-container .box:last-child {
+  border-right: 0;
+}
+/*!Servizi*/
+
+/*!Parallasse*/
+.parallasse {
+  background-image: url(../img/img-varie/parallasse-2.jpg);
+  background-size: cover;
+  padding: 60px;
+  background-attachment: fixed; 
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.parallasse .frase {
+  background-color: #ffffff73;
+  padding: 60px;
+  width: 50%;
+}
+/*!Parallasse*/
+
+
+/*!Sezione postazione*/
+.box-postazione {
+  text-align: center;
+  align-items: center;
+}
+
+.box-postazione .box {
+  flex: 1;
+}
+
+.box-postazione .box img {
+  width: 100%;
+}
+
+.box-postazione .box h2 {
+  font-weight: 800;
+  font-family: "Montserrat", "Raleway", sans-serif;
+  color: #253946;
+  padding-bottom: 0px;
+}
+
+.box-postazione .box hr {
+  width: 300px;
+  margin: 10px auto;
+  border: 1px solid #ca1c06;
+}
+
+.box-postazione .box ul {
+  text-align: left;
+  list-style: none;
+}
+
+.box-postazione .box ul li:before {
+  content: "\f00c";
+  font-family: "FontAwesome"; 
+  color: #ca1c06;
+  padding-right: 10px;  
+}
+
+.box-postazione .box:last-child {
+  padding: 20px;
+}
+/*!Sezione postazione*/
+
+/*! SEZIONE CONTATTI */
+.contatti {
+  align-items: center;
+}
+
+.contatti_col {
+  flex: 1;
+  padding: 40px;
+}
+
+.contatti .contatti_col .campo_form p {
+  padding: 5px 0;
+}
+
+.contatti .contatti_col .campo_form a {
+  font-weight: bold;
+  border-bottom: 1px solid black;
+  color: #ca1c06;
+}
+
+.contatti .contatti_col .campo_form label {
+  display: block;
+  text-align: center;
+  padding: 5px;
+}
+
+.contatti .contatti_col input {
+  width: 100%;
+  padding: 5px;
+}
+
+#privacy {
+  width: auto;
+}
+
+.contatti .contatti_col label[for="privacy"] {
+  display: inline;
+}
+
+.contatti .contatti_col input[type="submit"] {
+  background: #ca1c06;
+  border: 0;
+  color: #fff;
+  padding: 15px 20px;
+  min-width: 177px;
+  width: 40%;
+  margin-top: 20px;
+}
+
+.contatti .campo_form:last-child {
+  text-align: center;
+}
+
+.contatti .campo_icona {
+  align-items: center;
+  padding: 10px 0;
+}
+
+.contatti .campo_icona i {
+  color: #ca1c06;
+  margin-right: 16px;
+  border: 2px solid #ca1c06;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+
+.contatti .campo_icona h4 {
+  font-weight: bold;
+  color: #ca1c06;
+}
+
+.contatti .campo_icona .campo_icona_int {
+  margin-left: 10px;
+}
+/*! SEZIONE CONTATTI */
+
+/*!SEZIONE FOOTER*/
+
+/*!Pre-footer*/
+.prefooter .sezione-mini .prefooter_box{
+text-align: center;
+flex: 1;
+border-right: 1px solid grey;
+padding: 20px;
+
+}
+
+.prefooter .sezione-mini .prefooter_box:last-child{
+  border-right: none;
+}
+/*!Pre-footer*/
+
+/*!Footer*/
+.footer .sezione-mini .footer_col{
+text-align: center;
+flex: 1;
+padding: 20px;
+}
+
+.footer .sezione-mini .footer_col ul{
+  list-style: none;
+
+}
+
+.footer .sezione-mini .footer_col img{
+  width: 50px;
+  padding: 5px;
+
+}
+
+.footer .sezione-mini hr{
+  margin-bottom: 15px;
+}
+/*!Footer*/
+
+/*!Whatsapp*/
+.wa {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.wa a {
+  align-items: center;
+}
+
+.wa span {
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px 15px;
+  margin-right: 10px;
+  border: 1px solid #25d366;
+}
+
+.wa i {
+  font-size: 60px;
+  color: #25d366;
+}
+/*!Whatsapp*/
+
+
+
+@media screen and (max-width: 768px) {
+  
+  .flex:not(header, nav.flex, .social.flex){
+    flex-direction: column;
+  }
+
+  nav{
+    display: none !important;
+    position: absolute;
+    top: 143px;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    padding: 30px;
+  }
+  
+
+  nav.show {
+    display: block !important;
+  }
+
+  nav a{ 
+    display: block;
+  }
+
+  #hamburger{
+    display: block;  
+    margin: 10px;
+  }
+
+  .sezione-mini{
+    margin: 60px 30px;
+  }
+
+  .box-container .box:not(.box-container .box:last-child){
+    border-bottom: 2px dotted #48484844;
+   border-right: none;
+  }
+  
+  .prefooter .sezione-mini .prefooter_box{
+    border-right: none;
+  }
+
+  .parallasse{
+    background-position: center;
+  }
+
+  .parallasse .frase{
+    width: 100%;
+    text-align: left;
+  }
+  
+  .flex:not(header, nav.flex, .social.flex){
+    flex-direction: column;
+  }
+}
+

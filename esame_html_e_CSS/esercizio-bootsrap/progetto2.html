@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Progetto - bootstrap</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css" />
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="../assets/img/logo/logo-sb-no-bg.png" />
+</head>
+
+<body>
+  <section class="d-none">
+    <div class="container">
+      <div class="row">
+        <div class="col">Lorem ipsum dolor sit amet.</div>
+        <div class="col">Lorem ipsum dolor sit amet.</div>
+        <div class="col">Lorem ipsum dolor sit amet.</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-2">Lorem ipsum dolor sit amet.</div>
+        <div class="col-8">Lorem ipsum dolor sit amet.</div>
+        <div class="col-2">Lorem ipsum dolor sit amet.</div>
+      </div>
+    </div>
+
+    <!-- XS <576px il prefisso XS non va inserito perché sottinteso (sarebbe uguale a scrivere come nel container precedente)
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-4">Lorem ipsum dolor sit amet.</div>
+            <div class="col-xs-4">Lorem ipsum dolor sit amet.</div>
+            <div class="col-xs-4">Lorem ipsum dolor sit amet.</div>
+        </div>
+    </div>-->
+
+    <!-- SM ≥576px -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <strong>SM</strong>Lorem ipsum dolor sit amet.
+        </div>
+        <div class="col-sm-4">Lorem ipsum dolor sit amet.</div>
+        <div class="col-sm-4">Lorem ipsum dolor sit amet.</div>
+      </div>
+    </div>
+
+    <!-- MD ≥768px -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <strong>MD</strong>Lorem ipsum dolor sit amet.
+        </div>
+        <div class="col-md-4">Lorem ipsum dolor sit amet.</div>
+        <div class="col-md-4">Lorem ipsum dolor sit amet.</div>
+      </div>
+    </div>
+
+    <!-- LG ≥992px -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <strong>LG</strong>Lorem ipsum dolor sit amet.
+        </div>
+        <div class="col-lg-4">Lorem ipsum dolor sit amet.</div>
+        <div class="col-lg-4">Lorem ipsum dolor sit amet.</div>
+      </div>
+    </div>
+
+    <!-- XL ≥1200px -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-4">
+          <strong>XL</strong>Lorem ipsum dolor sit amet.
+        </div>
+        <div class="col-xl-4">Lorem ipsum dolor sit amet.</div>
+        <div class="col-xl-4">Lorem ipsum dolor sit amet.</div>
+      </div>
+    </div>
+
+    <!-- XXL ≥1400px -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xxl-4">
+          <strong>XXL</strong>Lorem ipsum dolor sit amet.
+        </div>
+        <div class="col-xxl-4">Lorem ipsum dolor sit amet.</div>
+        <div class="col-xxl-4">Lorem ipsum dolor sit amet.</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+          <!-- 
+                    text-center: allineare il testo al centro
+                    display-1: stilizzare il carattere
+                    mb-0: margin bottom 0
+                -->
+          <p class="display-1 text-center mb-0">
+            Lorem ipsum dolor sit amet.
+          </p>
+        </div>
+        <div class="col-lg-2"></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 col-md-2 col-sm-6">
+          Lorem ipsum dolor sit amet.
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-6">
+          Lorem ipsum dolor sit amet.
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-6">
+          Lorem ipsum dolor sit amet.
+        </div>
+        <!--questa classe sarà visibile solo a dispositivi SM-->
+        <div class="d-none d-sm-block d-md-none col-sm-6">NASCOSTA</div>
+      </div>
+    </div>
+  </section>
+
+  <!--FONDAMENTALE: 
+      <div class="Container">
+        <div class="Row">
+          <div class="nome-classe-bootstrap">
+        
+          </div>
+        </div>
+      </div>
+    -->
+
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="../assets/img/logo/logo-sb-no-bg.png" alt="Logo Sergio-Bellomonte" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#homepage">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#chi-siamo" >Chi siamo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#servizi">Servizi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contatti">Contatti</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" tabindex="0">
+    <section id="homepage">
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/slide-1.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/slide-2.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/slide-3.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <section id="chi-siamo">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-8 text-center">
+            <h1 class="display-1">Lorem ipsum dolor sit amet.</h1>
+            <p class="lead">
+              Lorem ipsum dolor sit amet, <mark>consectetur</mark> adipisicing
+              elit. Blanditiis quibusdam unde!
+            </p>
+            <div class="col-lg-2"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-5 my-4 border-top border-bottom border-primary">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="assets/img/slide-3.jpg" alt="" class="img-fluid" />
+          </div>
+
+          <div class="col-md-6 d-flex align-content-center flex-wrap">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Exercitationem voluptatibus obcaecati dicta nobis perspiciatis
+              odit.
+            </p>
+            <button type="button" class="btn btn-danger">Cliccami!</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container-fluid parallasse">
+        <div class="row p-5">
+          <div class="col-md-6"></div>
+          <div class="col-md-6 p-5 bg-danger rounded-2 red">
+            <p class="color-light text-white">
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Similique libero placeat dignissimos quaerat ullam odit,
+              reiciendis recusandae in? Culpa, illo."
+            </p>
+            <p class="color-light text-white">- Lorem ipsum</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servizi">
+      <div class="container my-5 text-center">
+        <div class="row">
+          <div class="col-lg-3 border-end border-dotted border-mobile-none">
+            <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" fill="black" class="bi bi-tree"
+              viewBox="0 0 16 16">
+              <path
+                d="M8.416.223a.5.5 0 0 0-.832 0l-3 4.5A.5.5 0 0 0 5 5.5h.098L3.076 8.735A.5.5 0 0 0 3.5 9.5h.191l-1.638 3.276a.5.5 0 0 0 .447.724H7V16h2v-2.5h4.5a.5.5 0 0 0 .447-.724L12.31 9.5h.191a.5.5 0 0 0 .424-.765L10.902 5.5H11a.5.5 0 0 0 .416-.777zM6.437 4.758A.5.5 0 0 0 6 4.5h-.066L8 1.401 10.066 4.5H10a.5.5 0 0 0-.424.765L11.598 8.5H11.5a.5.5 0 0 0-.447.724L12.69 12.5H3.309l1.638-3.276A.5.5 0 0 0 4.5 8.5h-.098l2.022-3.235a.5.5 0 0 0 .013-.507" />
+            </svg>
+            <h3 class="text-danger pt-2">Lorem, ipsum.</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+              dolore? Sed quasi odit fugiat corrupti suscipit nam quaerat quas
+              quam perferendis nihil, totam explicabo dicta dolores at error
+              eum tempore?
+            </p>
+          </div>
+
+          <div class="col-lg-3 border-end border-dotted pt-2 border-mobile-none">
+            <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" fill="black" class="bi bi-tree"
+              viewBox="0 0 16 16">
+              <path
+                d="M8.416.223a.5.5 0 0 0-.832 0l-3 4.5A.5.5 0 0 0 5 5.5h.098L3.076 8.735A.5.5 0 0 0 3.5 9.5h.191l-1.638 3.276a.5.5 0 0 0 .447.724H7V16h2v-2.5h4.5a.5.5 0 0 0 .447-.724L12.31 9.5h.191a.5.5 0 0 0 .424-.765L10.902 5.5H11a.5.5 0 0 0 .416-.777zM6.437 4.758A.5.5 0 0 0 6 4.5h-.066L8 1.401 10.066 4.5H10a.5.5 0 0 0-.424.765L11.598 8.5H11.5a.5.5 0 0 0-.447.724L12.69 12.5H3.309l1.638-3.276A.5.5 0 0 0 4.5 8.5h-.098l2.022-3.235a.5.5 0 0 0 .013-.507" />
+            </svg>
+            <h3 class="text-danger">Lorem, ipsum.</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+              dolore? Sed quasi odit fugiat corrupti suscipit nam quaerat quas
+              quam perferendis nihil, totam explicabo dicta dolores at error
+              eum tempore?
+            </p>
+          </div>
+
+          <div class="col-lg-3 border-end border-dotted pt-2 border-mobile-none">
+            <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" fill="black" class="bi bi-tree"
+              viewBox="0 0 16 16">
+              <path
+                d="M8.416.223a.5.5 0 0 0-.832 0l-3 4.5A.5.5 0 0 0 5 5.5h.098L3.076 8.735A.5.5 0 0 0 3.5 9.5h.191l-1.638 3.276a.5.5 0 0 0 .447.724H7V16h2v-2.5h4.5a.5.5 0 0 0 .447-.724L12.31 9.5h.191a.5.5 0 0 0 .424-.765L10.902 5.5H11a.5.5 0 0 0 .416-.777zM6.437 4.758A.5.5 0 0 0 6 4.5h-.066L8 1.401 10.066 4.5H10a.5.5 0 0 0-.424.765L11.598 8.5H11.5a.5.5 0 0 0-.447.724L12.69 12.5H3.309l1.638-3.276A.5.5 0 0 0 4.5 8.5h-.098l2.022-3.235a.5.5 0 0 0 .013-.507" />
+            </svg>
+            <h3 class="text-danger">Lorem, ipsum.</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+              dolore? Sed quasi odit fugiat corrupti suscipit nam quaerat quas
+              quam perferendis nihil, totam explicabo dicta dolores at error
+              eum tempore?
+            </p>
+          </div>
+
+          <div class="col-lg-3 pt-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" fill="black" class="bi bi-tree"
+              viewBox="0 0 16 16">
+              <path
+                d="M8.416.223a.5.5 0 0 0-.832 0l-3 4.5A.5.5 0 0 0 5 5.5h.098L3.076 8.735A.5.5 0 0 0 3.5 9.5h.191l-1.638 3.276a.5.5 0 0 0 .447.724H7V16h2v-2.5h4.5a.5.5 0 0 0 .447-.724L12.31 9.5h.191a.5.5 0 0 0 .424-.765L10.902 5.5H11a.5.5 0 0 0 .416-.777zM6.437 4.758A.5.5 0 0 0 6 4.5h-.066L8 1.401 10.066 4.5H10a.5.5 0 0 0-.424.765L11.598 8.5H11.5a.5.5 0 0 0-.447.724L12.69 12.5H3.309l1.638-3.276A.5.5 0 0 0 4.5 8.5h-.098l2.022-3.235a.5.5 0 0 0 .013-.507" />
+            </svg>
+            <h3 class="text-danger">Lorem, ipsum.</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+              dolore? Sed quasi odit fugiat corrupti suscipit nam quaerat quas
+              quam perferendis nihil, totam explicabo dicta dolores at error
+              eum tempore?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contatti">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-lg-6">
+            <form>
+              <div class="mb-3">
+                <label for="name_e_surname" class="form-label">Inserisci qui il tuo nome e cognome:</label>
+                <input type="text" class="form-control" id="name_e_surname" />
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">Inserisci qui il tuo indirizzo E-mail: *</label>
+                <input type="email" class="form-control" id="email" required />
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Inserisci qui la tua password: * </label>
+                <input type="password" class="form-control" id="exampleInputPassword1" required />
+              </div>
+
+              <div class="mb-3">
+                <label for="tel" class="form-label">Inserisci qui il tuo numero di telefono:</label>
+                <input type=tel" class="form-control" id="tel">
+              </div>
+
+              <div class="campo_form">
+                <p>
+                  <input type="checkbox" id="privacy" name="privacy" value="accettato" required />
+                  <label for="privacy">
+                    Ho letto l'<a href="#">
+                      <span class="link-danger link-underline-danger">informativa sulla privacy</span></a>
+                    e acconsento al trattamento dei dati personali</label>
+                </p>
+              </div>
+
+              <button type="submit" class="btn btn-danger">Submit</button>
+            </form>
+          </div>
+    
+
+        <div class="col-lg-6 text-center">
+            <button type="button" class="btn btn-danger col-md-6" data-bs-toggle="modal"data-bs-target="#exampleModal">Launch demo modal</button>                 
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title">Modal title</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal"
+                              aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body text-center">
+                          <p>Modal body text goes here.</p>
+                      </div>
+                      <div class="modal-footer">
+                          <p>Grazie per aver cliccato</p>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      
+    </section>
+
+  </main>
+
+  <footer></footer>
+
+  <script src="assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+  <div class="row"></div>
+</div>

@@ -1,0 +1,52 @@
+/*.row {
+    border-top: 2px solid;
+}
+.row div:first-child {
+    background-color: aquamarine;
+}
+.row div:nth-child(2) {
+    background-color: burlywood;
+}
+.row div:last-child {
+    background-color: lightcoral;
+}*/
+
+body{
+    position: relative;
+}
+
+section{
+    scroll-margin-top: 125px;
+}
+
+.navbar-nav .nav-link.active, 
+.navbar-nav .nav-link.show {
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 5px;
+}
+
+.navbar-brand img {
+    height: 100px;
+}
+
+#carouselExampleCaptions,
+.carousel-inner,
+.carousel-item {
+    height: 60vh;
+}
+
+.parallasse {
+    background-image: url(../img/slide-2.jpg);
+    background-size: cover;
+   
+    background-attachment: fixed; /*il comando per eseguire la parallasse è questo qui*/
+    
+  }
+
+  @media screen and (max-width: 991px){
+    .border-mobile-none{
+        border-right: none !important;
+        border-bottom: dotted 2px grey;
+    }
+  }
